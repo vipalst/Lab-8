@@ -1,7 +1,7 @@
 <html>
 <script>
 
-async function start() { 
+async function getImg() { 
 let url = await fetch('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY'); 
 let data = await url.json();
 
@@ -18,7 +18,7 @@ explanation.innerHTML = data.explanation;
 document.body.append(explanation);
 } 
  
-start();
+getImg();
 	
 </script>
 </html>
